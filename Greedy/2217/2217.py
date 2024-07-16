@@ -9,12 +9,18 @@
 
 n = int(input())
 
-result = 0
-# rope_list = []
+rope_list = []
 for i in range(n):
     rope = int(input())
+    rope_list.append(rope)
 
-    if rope * (n - i) > result:
-        result = rope * n - i
+rope_list.sort()
+result = 0
+
+for i in range(n):
+    num = rope_list[i] * (n - i)
+    if result < num:
+        result = num
+
 
 print(result)
