@@ -15,4 +15,21 @@ N(1 ≤ N ≤ 100,000)개의 로프가 있다. 이 로프를 이용하여 이런
 
 ## 내 정답
 ```Python
+n = int(input())
+
+rope_list = []
+for i in range(n):
+    rope = int(input())
+    rope_list.append(rope)
+
+rope_list.sort()
+result = 0
+
+for i in range(n):
+    num = rope_list[i] * (n - i)
+    if result < num:
+        result = num
+
+
+print(result)
 ```
