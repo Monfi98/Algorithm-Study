@@ -21,4 +21,21 @@
 
 ## 내 정답
 ```Python
+n = int(input())
+
+tip_list = []
+for i in range(n):
+    money = int(input())
+    tip_list.append(money)
+
+tip_list.sort(reverse=True)
+
+result = 0
+for i in range(n):
+    if tip_list[i] - i < 0:
+        break
+    else:
+        result += tip_list[i] - i
+
+print(result)
 ```
