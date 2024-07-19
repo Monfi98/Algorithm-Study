@@ -10,3 +10,4 @@
 | 03 | 2217 | [로프](https://www.acmicpc.net/problem/2217) | 실버 4 | [바로가기](./2217/) |
 | 04 | 1758 | [알바생 강호](https://www.acmicpc.net/problem/1758) | 실버 4 | [바로가기](./1758/) |
 | 05 | 11508 | [2+1 세일](https://www.acmicpc.net/problem/11508) | 실버 4 | [바로가기](./11508/) |
+| 06 | 20300 | [서강 근육맨](https://www.acmicpc.net/problem/20300) | 실버 3 | [바로가기](./20300/) |
