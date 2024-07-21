@@ -27,16 +27,17 @@ last_num = 0
 
 if n % 2 == 1: # 홀수라면
     n -= 1
-    machine_list.pop()
+    last_num = machine_list.pop()
 
 # 8 // 4
 max_num = 0
 
 for i in range(n // 2):
     current_num = machine_list[i] + machine_list[n - i - 1]
-    print(current_num)
     if max_num < current_num:
         max_num = current_num
 
-print(current_num)
-
+if max_num < last_num:
+    print(last_num)
+else:
+    print(max_num)

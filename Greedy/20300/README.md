@@ -27,4 +27,26 @@ $M$의 최솟값을 출력한다.
 
 ## 내 정답
 ```Python
+n = int(input())
+
+machine_list = list(map(int, input().split(" ")))
+machine_list.sort()
+
+last_num = 0
+
+if n % 2 == 1:
+    n -= 1
+    last_num = machine_list.pop()
+
+max_num = 0
+
+for i in range(n // 2):
+    current_num = machine_list[i] + machine_list[n - i - 1]
+    if max_num < current_num:
+        max_num = current_num
+
+if max_num < last_num:
+    print(last_num)
+else:
+    print(max_num)
 ```
